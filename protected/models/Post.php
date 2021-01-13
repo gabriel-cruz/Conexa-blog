@@ -8,8 +8,9 @@
  * @property string $title
  * @property string $content
  * @property integer $tags
- * @property integer $author
+ * @property string $author
  * @property integer $date
+ * @property integer $update_time
  *
  * The followings are the available model relations:
  * @property Comment[] $comments
@@ -48,14 +49,14 @@ class Post extends CActiveRecord
 			array('title', 'length', 'max'=>128),
 			array('tags', 'match', 'pattern'=>'/^[\w\s,]+$/',
 			'message'=>'Tags só podem conter palavras.'),
-			array('tags', 'normalizeTags');
+			array('tags', 'normalizeTags'),
 
 			array('title', 'safe', 'on'=>'search'), 
 		);
 	}
 
 	public function normalizeTags($attribute,$params){
-    	$this->tags=Tag::array2string(array_unique(Tag::string2array($this->tags)));
+    	$this->tags=Tags::array2string(array_unique(Tags::string2array($this->tags)));
 	}
 
 	/**
@@ -67,11 +68,11 @@ class Post extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'author'=> (array(self::BELONGS_TO, 'Users', 'author')),
-			'comments'=> array(self::HAS_MANY, 'Comment', 'post_id',
-				'condition'=>'comments.status='.Comment::STATUS_APROVED,
+			'comments'=> array(self::HAS_MANY, 'Comment', 'post',
+				//'condition'=>'comments.status='.Comment::STATUS_APROVED,
 				'order'=>'comments.comn_date DESC'),
-			'commentCount'=> array(self::STAT, 'Comment', 'post_id',
-				'condition'=>'status='.Comment::STATUS_APROVED),	
+			'commentCount'=> array(self::STAT, 'Comment', 'post')
+				//'condition'=>'status='.Comment::STATUS_APROVED),	
 		);
 	}
 
@@ -85,8 +86,9 @@ class Post extends CActiveRecord
 			'title' => 'Title',
 			'content' => 'Content',
 			'tags' => 'Tags',
-			'author' => 'Author',
+			'author'=> 'Author',
 			'date' => 'Date',
+			'update_time' => 'Update Time',
 		);
 	}
 
@@ -107,9 +109,48 @@ class Post extends CActiveRecord
 		$criteria->compare('tags',$this->tags);
 		$criteria->compare('author',$this->author);
 		$criteria->compare('date',$this->date);
+		$criteria->compare('update_time',$this->update_time);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
+	}
+
+	public function getUrl(){
+		return Yii::app()->createUrl('post/view', array(
+			'post_id'=>$this->post_id,
+			'title'=>$this->title,
+		));
+	}
+
+	/*protected function beforeSave(){
+
+		if(parent::beforeSave()){
+
+			if($this->isNewRecord){
+				$this->date=$this->update_time=time();
+				$this->author_id=Yii::app()->users->;
+			}
+			else{
+				$this->update_time=time();
+			}
+
+			return true;
+		}
+		else{
+			return false;
+		}
+	}*/
+
+	protected function afterSave(){
+		parent::afterSave();
+		Tags::model()->updateFrequency($this->_oldTags, $this->tags);
+	}
+
+	private $_oldTags;
+
+	protected function afterFind(){
+		parent::afterFind();
+		$this->_oldTags=$this->tags;
 	}
 }

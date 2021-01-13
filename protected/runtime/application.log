@@ -128,3 +128,920 @@ Stack trace:
 REQUEST_URI=/index.php?r=site/login
 HTTP_REFERER=http://127.0.0.1:8080/index.php?r=site/login
 ---
+2021/01/13 19:42:22 [error] [exception.Error] Error: Undefined class constant 'STATUS_APROVED' in /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php:72
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(2337): Post->relations()
+#1 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Post))
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(125): CActiveDataProvider->__construct('Post')
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#15 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=post
+---
+2021/01/13 19:42:37 [error] [exception.Error] Error: Undefined class constant 'STATUS_APROVED' in /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php:72
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(2337): Post->relations()
+#1 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Post))
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(125): CActiveDataProvider->__construct('Post')
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#15 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=post
+---
+2021/01/13 19:44:29 [error] [exception.ParseError] ParseError: syntax error, unexpected '}' in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php:133
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(277): CWebApplication->createController('')
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#2 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/index.php?r=post
+---
+2021/01/13 19:44:47 [error] [exception.Error] Error: Undefined class constant 'STATUS_APROVED' in /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php:75
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(2337): Post->relations()
+#1 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Post))
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(139): CActiveDataProvider->__construct('Post', Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#15 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=post
+---
+2021/01/13 19:45:05 [error] [exception.ParseError] ParseError: syntax error, unexpected ';', expecting ')' in /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php:76
+Stack trace:
+#0 [internal function]: YiiBase::autoload('Post')
+#1 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(387): spl_autoload_call('Post')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(139): CActiveDataProvider->__construct('Post', Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#15 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=post
+---
+2021/01/13 19:47:06 [error] [exception.CDbException] CDbException: The relation "commentCount" in active record class "Post" is specified with an invalid foreign key "post_id". There is no such column in the table "tbl_comment". in /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveFinder.php:1389
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveFinder.php(1366): CStatElement->queryOneMany()
+#1 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveFinder.php(437): CStatElement->query()
+#2 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), true)
+#4 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CActiveDataProvider.php(150): CActiveRecord->findAll(Object(CDbCriteria))
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#7 /home/conexa-dev-02/Documentos/yii/framework/zii/widgets/CBaseListView.php(108): CDataProvider->getData()
+#8 /home/conexa-dev-02/Documentos/yii/framework/zii/widgets/CListView.php(182): CBaseListView->init()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(148): CListView->init()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#11 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#16 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(143): CController->render('index', Array)
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#20 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#21 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#22 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#23 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#24 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#25 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#27 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#28 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#29 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/index.php?r=post
+---
+2021/01/13 19:59:11 [error] [exception.CException] CException: Alias "zii.widgetes.CListView" is invalid. Make sure it points to an existing PHP file and the file is readable. in /home/conexa-dev-02/Documentos/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('zii.widgetes.CL...', true)
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PostController), 'zii.widgetes.CL...', Array)
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgetes.CL...', Array)
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/index.php(8): CBaseController->widget('zii.widgetes.CL...', Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(143): CController->render('index', Array)
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('index')
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/index')
+#20 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php?r=post/index
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/admin
+---
+2021/01/13 20:03:31 [warning] [application] Failed to set unsafe attribute "author" of "Post".
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (72)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:03:31 [error] [php] include(Tag.php): failed to open stream: No such file or directory (/home/conexa-dev-02/Documentos/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php(59): spl_autoload_call()
+#1 /home/conexa-dev-02/Documentos/yii/framework/validators/CInlineValidator.php(43): Post->normalizeTags()
+#2 /home/conexa-dev-02/Documentos/yii/framework/validators/CValidator.php(214): CInlineValidator->validateAttribute()
+#3 /home/conexa-dev-02/Documentos/yii/framework/base/CModel.php(158): CInlineValidator->validate()
+#4 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(795): Post->validate()
+#5 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(73): Post->save()
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): PostController->filterAccessControl()
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): PostController->runActionWithFilters()
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): PostController->run()
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#17 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/create
+in /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php (59)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (73)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:05:14 [warning] [application] Failed to set unsafe attribute "author" of "Post".
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (72)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:05:14 [error] [exception.CException] CException: Property "Post.create_time" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(160): CComponent->__set('create_time', 1610564714)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php(131): CActiveRecord->__set('create_time', 1610564714)
+#2 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1011): Post->beforeSave()
+#3 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#4 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(73): CActiveRecord->save()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/create')
+#16 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=post/create
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/13 20:06:24 [warning] [application] Failed to set unsafe attribute "author" of "Post".
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (72)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:06:24 [error] [exception.CException] CException: Property "CWebUser.user_id" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/auth/CWebUser.php(141): CComponent->__get('user_id')
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php(132): CWebUser->__get('user_id')
+#2 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1011): Post->beforeSave()
+#3 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#4 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(73): CActiveRecord->save()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/create')
+#16 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=post/create
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/13 20:07:12 [warning] [application] Failed to set unsafe attribute "author" of "Post".
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (72)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:07:12 [error] [exception.CException] CException: Property "CWebApplication.users" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/base/CModule.php(106): CComponent->__get('users')
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php(132): CModule->__get('users')
+#2 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1011): Post->beforeSave()
+#3 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#4 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(73): CActiveRecord->save()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/create')
+#16 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=post/create
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/13 20:11:20 [warning] [application] Failed to set unsafe attribute "author" of "Post".
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (72)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:11:20 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'author' doesn't have a default value. The SQL statement executed was: INSERT INTO `tbl_post` (`title`, `content`, `tags`) VALUES (:yp0, :yp1, :yp2).
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (73)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:11:20 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'author' doesn't have a default value. The SQL statement executed was: INSERT INTO `tbl_post` (`title`, `content`, `tags`) VALUES (:yp0, :yp1, :yp2) in /home/conexa-dev-02/Documentos/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1017): CDbCommand->execute()
+#1 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(73): CActiveRecord->save()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/create')
+#14 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=post/create
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/13 20:12:11 [warning] [application] Failed to set unsafe attribute "author" of "Post".
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (72)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:12:11 [error] [exception.CException] CException: Property "CWebUser.author" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/auth/CWebUser.php(141): CComponent->__get('author')
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php(132): CWebUser->__get('author')
+#2 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1011): Post->beforeSave()
+#3 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#4 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(73): CActiveRecord->save()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/create')
+#16 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=post/create
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/13 20:12:26 [warning] [application] Failed to set unsafe attribute "author" of "Post".
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (72)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:12:26 [error] [exception.CException] CException: Property "CWebApplication.users" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/base/CModule.php(106): CComponent->__get('users')
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php(132): CModule->__get('users')
+#2 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1011): Post->beforeSave()
+#3 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#4 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(73): CActiveRecord->save()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/create')
+#16 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=post/create
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/13 20:13:38 [warning] [application] Failed to set unsafe attribute "author" of "Post".
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (72)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:13:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'author' doesn't have a default value. The SQL statement executed was: INSERT INTO `tbl_post` (`title`, `content`, `tags`) VALUES (:yp0, :yp1, :yp2).
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (73)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:13:38 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'author' doesn't have a default value. The SQL statement executed was: INSERT INTO `tbl_post` (`title`, `content`, `tags`) VALUES (:yp0, :yp1, :yp2) in /home/conexa-dev-02/Documentos/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1017): CDbCommand->execute()
+#1 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(73): CActiveRecord->save()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/create')
+#14 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=post/create
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/13 20:13:51 [warning] [application] Failed to set unsafe attribute "author" of "Post".
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (72)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:13:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'author' doesn't have a default value. The SQL statement executed was: INSERT INTO `tbl_post` (`title`, `content`, `tags`) VALUES (:yp0, :yp1, :yp2).
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (73)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:13:51 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'author' doesn't have a default value. The SQL statement executed was: INSERT INTO `tbl_post` (`title`, `content`, `tags`) VALUES (:yp0, :yp1, :yp2) in /home/conexa-dev-02/Documentos/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1017): CDbCommand->execute()
+#1 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(73): CActiveRecord->save()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/create')
+#14 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=post/create
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/13 20:21:58 [warning] [application] Failed to set unsafe attribute "author" of "Post".
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (72)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:21:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'author' doesn't have a default value. The SQL statement executed was: INSERT INTO `tbl_post` (`title`, `content`, `tags`) VALUES (:yp0, :yp1, :yp2).
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (73)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:21:58 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'author' doesn't have a default value. The SQL statement executed was: INSERT INTO `tbl_post` (`title`, `content`, `tags`) VALUES (:yp0, :yp1, :yp2) in /home/conexa-dev-02/Documentos/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1017): CDbCommand->execute()
+#1 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(73): CActiveRecord->save()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/create')
+#14 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=post/create
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/13 20:45:28 [warning] [application] Failed to set unsafe attribute "author" of "Post".
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (72)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:45:28 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'author' doesn't have a default value. The SQL statement executed was: INSERT INTO `tbl_post` (`title`, `content`, `tags`) VALUES (:yp0, :yp1, :yp2).
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (73)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:45:28 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'author' doesn't have a default value. The SQL statement executed was: INSERT INTO `tbl_post` (`title`, `content`, `tags`) VALUES (:yp0, :yp1, :yp2) in /home/conexa-dev-02/Documentos/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1017): CDbCommand->execute()
+#1 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(73): CActiveRecord->save()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/create')
+#14 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=post/create
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/13 20:46:44 [warning] [application] Failed to set unsafe attribute "author" of "Post".
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (72)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:46:44 [error] [php] include(Tag.php): failed to open stream: No such file or directory (/home/conexa-dev-02/Documentos/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php(147): spl_autoload_call()
+#1 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1037): Post->afterSave()
+#2 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(796): Post->insert()
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(73): Post->save()
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): PostController->filterAccessControl()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): PostController->runActionWithFilters()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): PostController->run()
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#15 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/create
+in /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php (147)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (73)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:47:42 [warning] [application] Failed to set unsafe attribute "author" of "Post".
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (72)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:47:42 [error] [exception.CException] CException: Tags and its behaviors do not have a method or closure named "addTags". in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(226): CComponent->__call('addTags', Array)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/models/Tags.php(106): CActiveRecord->__call('addTags', Array)
+#2 /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php(147): Tags->updateFrequency(Array, Array)
+#3 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1037): Post->afterSave()
+#4 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#5 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(73): CActiveRecord->save()
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/create')
+#17 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php?r=post/create
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/13 20:49:38 [warning] [application] Failed to set unsafe attribute "author" of "Post".
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (72)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:49:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'where clause'. The SQL statement executed was: UPDATE `tbl_tags` SET `frequency`=`frequency`+1 WHERE name=:ycp0.
+in /home/conexa-dev-02/Documentos/yii/blog/protected/models/Tags.php (106)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/models/Tags.php (123)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php (147)
+2021/01/13 20:49:38 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'where clause'. The SQL statement executed was: UPDATE `tbl_tags` SET `frequency`=`frequency`+1 WHERE name=:ycp0 in /home/conexa-dev-02/Documentos/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1722): CDbCommand->execute()
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/models/Tags.php(106): CActiveRecord->updateCounters(Array, Object(CDbCriteria))
+#2 /home/conexa-dev-02/Documentos/yii/blog/protected/models/Tags.php(123): Tags->addTags(Array)
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php(147): Tags->updateFrequency(Array, Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1037): Post->afterSave()
+#5 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#6 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(73): CActiveRecord->save()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/create')
+#18 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php?r=post/create
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/13 20:50:36 [warning] [application] Failed to set unsafe attribute "author" of "Post".
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (72)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:50:36 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'where clause'. The SQL statement executed was: SELECT 1 FROM `tbl_tags` `t` WHERE name=:name LIMIT 1.
+in /home/conexa-dev-02/Documentos/yii/blog/protected/models/Tags.php (109)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/models/Tags.php (123)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php (147)
+2021/01/13 20:50:36 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'where clause'. The SQL statement executed was: SELECT 1 FROM `tbl_tags` `t` WHERE name=:name LIMIT 1 in /home/conexa-dev-02/Documentos/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/db/CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1607): CDbCommand->queryRow()
+#2 /home/conexa-dev-02/Documentos/yii/blog/protected/models/Tags.php(109): CActiveRecord->exists('name=:name', Array)
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/models/Tags.php(123): Tags->addTags(Array)
+#4 /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php(147): Tags->updateFrequency(Array, Array)
+#5 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1037): Post->afterSave()
+#6 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#7 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(73): CActiveRecord->save()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/create')
+#19 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=post/create
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/13 20:53:48 [warning] [application] Failed to set unsafe attribute "author" of "Post".
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (72)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:53:48 [error] [exception.CException] CException: Tags and its behaviors do not have a method or closure named "removeTags". in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(226): CComponent->__call('removeTags', Array)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/models/Tags.php(124): CActiveRecord->__call('removeTags', Array)
+#2 /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php(147): Tags->updateFrequency(Array, Array)
+#3 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1037): Post->afterSave()
+#4 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#5 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(73): CActiveRecord->save()
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/create')
+#17 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php?r=post/create
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/13 20:54:18 [warning] [application] Failed to set unsafe attribute "author" of "Post".
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (72)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:54:18 [error] [exception.CException] CException: Property "PostController._model" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(169): CComponent->__get('_model')
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(55): PostController->loadModel('6')
+#2 [internal function]: PostController->actionView('6')
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/view')
+#15 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=post/view&id=6
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/13 20:56:04 [error] [exception.Error] Error: Undefined class constant 'STATUS_PUBLISHED' in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php:172
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(55): PostController->loadModel('6')
+#1 [internal function]: PostController->actionView('6')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/view')
+#14 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=post/view&id=6
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/13 20:56:31 [error] [exception.Error] Error: Undefined class constant 'STATUS_PUBLISHED' in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php:172
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(55): PostController->loadModel('6')
+#1 [internal function]: PostController->actionView('6')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('view')
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/view')
+#14 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=post/view&id=6
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/13 20:57:00 [error] [php] Undefined variable: condition (/home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php:180)
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): PostController->filterAccessControl()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): PostController->runActionWithFilters()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): PostController->run()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#12 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=6
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (180)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (55)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 20:57:32 [error] [php] Trying to get property of non-object (/home/conexa-dev-02/Documentos/yii/blog/protected/views/post/view.php:3)
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): PostController->renderFile()
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): PostController->renderPartial()
+#2 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(55): PostController->render()
+#3 unknown(0): PostController->actionView()
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): PostController->filterAccessControl()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): PostController->runActionWithFilters()
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): PostController->run()
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#16 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=6
+in /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/view.php (3)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (55)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 21:03:27 [error] [php] Trying to get property of non-object (/home/conexa-dev-02/Documentos/yii/blog/protected/views/post/view.php:3)
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): PostController->renderFile()
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): PostController->renderPartial()
+#2 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(55): PostController->render()
+#3 unknown(0): PostController->actionView()
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): PostController->filterAccessControl()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): PostController->runActionWithFilters()
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): PostController->run()
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#16 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=6
+in /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/view.php (3)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (55)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/13 21:07:41 [error] [php] Trying to get property of non-object (/home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php:122)
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/_view.php(3): Post->__get()
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require()
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): PostController->renderInternal()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): PostController->renderFile()
+#4 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/view.php(9): PostController->renderPartial()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require()
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): PostController->renderInternal()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): PostController->renderFile()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): PostController->renderPartial()
+#9 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(59): PostController->render()
+#10 unknown(0): PostController->actionView()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): PostController->filterAccessControl()
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#20 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): PostController->runActionWithFilters()
+#21 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): PostController->run()
+#22 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#23 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=6
+in /home/conexa-dev-02/Documentos/yii/blog/protected/models/Post.php (122)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/_view.php (3)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/view.php (9)
+2021/01/13 21:08:17 [error] [php] Trying to get property of non-object (/home/conexa-dev-02/Documentos/yii/blog/protected/views/post/_view.php:6)
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): PostController->renderFile()
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/view.php(9): PostController->renderPartial()
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): PostController->renderInternal()
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): PostController->renderFile()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): PostController->renderPartial()
+#6 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(59): PostController->render()
+#7 unknown(0): PostController->actionView()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): PostController->filterAccessControl()
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): PostController->runActionWithFilters()
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): PostController->run()
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#20 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=6
+in /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/_view.php (6)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/view.php (9)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (59)
+2021/01/13 21:09:17 [error] [php] Trying to get property of non-object (/home/conexa-dev-02/Documentos/yii/blog/protected/views/post/_view.php:6)
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): PostController->renderFile()
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/view.php(9): PostController->renderPartial()
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): PostController->renderInternal()
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): PostController->renderFile()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): PostController->renderPartial()
+#6 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(59): PostController->render()
+#7 unknown(0): PostController->actionView()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): PostController->filterAccessControl()
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): PostController->runActionWithFilters()
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): PostController->run()
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#20 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=6
+in /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/_view.php (6)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/view.php (9)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (59)
+2021/01/13 21:12:10 [error] [php] Trying to get property of non-object (/home/conexa-dev-02/Documentos/yii/blog/protected/views/post/_view.php:6)
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): PostController->renderFile()
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/view.php(9): PostController->renderPartial()
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): PostController->renderInternal()
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): PostController->renderFile()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): PostController->renderPartial()
+#6 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(59): PostController->render()
+#7 unknown(0): PostController->actionView()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): PostController->filterAccessControl()
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): PostController->runActionWithFilters()
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): PostController->run()
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#20 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=6
+in /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/_view.php (6)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/view.php (9)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (59)
+2021/01/13 21:12:43 [error] [php] Trying to get property of non-object (/home/conexa-dev-02/Documentos/yii/blog/protected/views/post/_view.php:6)
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): PostController->renderFile()
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/view.php(9): PostController->renderPartial()
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): PostController->renderInternal()
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): PostController->renderFile()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): PostController->renderPartial()
+#6 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(59): PostController->render()
+#7 unknown(0): PostController->actionView()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): PostController->filterAccessControl()
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): PostController->runActionWithFilters()
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): PostController->run()
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#20 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=6
+in /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/_view.php (6)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/view.php (9)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (59)
+2021/01/13 21:13:14 [error] [php] Undefined variable: comment (/home/conexa-dev-02/Documentos/yii/blog/protected/views/post/view.php:32)
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): PostController->renderFile()
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): PostController->renderPartial()
+#2 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(59): PostController->render()
+#3 unknown(0): PostController->actionView()
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): PostController->filterAccessControl()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): PostController->runActionWithFilters()
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): PostController->run()
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#16 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=6
+in /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/view.php (32)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (59)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)

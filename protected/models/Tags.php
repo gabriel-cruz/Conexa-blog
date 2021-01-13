@@ -5,7 +5,7 @@
  *
  * The followings are the available columns in table 'tbl_tags':
  * @property integer $tag_id
- * @property string $tagname
+ * @property string $name
  * @property integer $frequency
  *
  * The followings are the available model relations:
@@ -40,10 +40,10 @@ class Tags extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('frequency', 'numerical', 'integerOnly'=>true),
-			array('tagname', 'length', 'max'=>100),
+			array('name', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('tag_id, tagname, frequency', 'safe', 'on'=>'search'),
+			array('tag_id, name, frequency', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -66,7 +66,7 @@ class Tags extends CActiveRecord
 	{
 		return array(
 			'tag_id' => 'Tag',
-			'tagname' => 'Tagname',
+			'name' => 'Name',
 			'frequency' => 'Frequency',
 		);
 	}
@@ -83,7 +83,7 @@ class Tags extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('tag_id',$this->tag_id);
-		$criteria->compare('tagname',$this->tagname,true);
+		$criteria->compare('name',$this->name,true);
 		$criteria->compare('frequency',$this->frequency);
 
 		return new CActiveDataProvider($this, array(
@@ -98,4 +98,41 @@ class Tags extends CActiveRecord
 	public static function array2string($tags){
     	return implode(', ',$tags);
 	}
+
+	public function addTags($tags)
+	{
+		$criteria=new CDbCriteria;
+		$criteria->addInCondition('name',$tags);
+		$this->updateCounters(array('frequency'=>1),$criteria);
+		foreach($tags as $name)
+		{
+			if(!$this->exists('name=:name',array(':name'=>$name)))
+			{
+				$tag=new Tags;
+				$tag->name=$name;
+				$tag->frequency=1;
+				$tag->save();
+			}
+		}
+	}
+
+	public function removeTags($tags)
+	{
+		if(empty($tags))
+			return;
+		$criteria=new CDbCriteria;
+		$criteria->addInCondition('name',$tags);
+		$this->updateCounters(array('frequency'=>-1),$criteria);
+		$this->deleteAll('frequency<=0');
+	}
+
+	public function updateFrequency($oldTags, $newTags)
+	{
+		$oldTags=self::string2array($oldTags);
+		$newTags=self::string2array($newTags);
+		$this->addTags(array_values(array_diff($newTags,$oldTags)));
+		$this->removeTags(array_values(array_diff($oldTags,$newTags)));
+	}
+
+	
 }
