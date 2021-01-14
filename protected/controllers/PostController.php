@@ -53,11 +53,28 @@ class PostController extends Controller
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
 	 */
-	public function actionView($id)
-	{	$this->loadModel($id);
+	public function actionView($id){	
+		
+		$this->loadModel($id);
+		$post=$this->_model;
+		$comment=$this->newComment($post);
+		
 		$this->render('view', array(
 			'model' => $this->_model,
+			'comment'=>$comment,
 		));
+	}
+
+	protected function newComment($post){
+		$comment = new Comment;
+
+		if(isset($_POST['Comment'])){
+			$comment->attributes=$_POST['Comment'];
+			$post->addComment($comment);
+			$this->refresh();
+		}
+
+		return $comment;
 	}
 
 	/**
@@ -177,7 +194,7 @@ class PostController extends Controller
 					$condition = '';
 				}
 
-				$this->_model = Post::model()->findByPk($_GET['id']/*, $condition*/);
+				$this->_model = Post::model()->findByPk($id);
 			}
 		}
 	}

@@ -12,7 +12,7 @@ $this->pageTitle = $model->title;
 <div id="comments">
 	<?php if ($model->commentCount >= 1) : ?>
 		<h3>
-			<?php echo $model->commentCount > 1 ? $model->commentCount . ' comments' : 'One comment'; ?>
+			<?php echo $model->commentCount . ' comentário(s)'; ?>	
 		</h3>
 
 		<?php $this->renderPartial('_comments', array(
@@ -21,16 +21,12 @@ $this->pageTitle = $model->title;
 		)); ?>
 	<?php endif; ?>
 
-	<h3>Leave a Comment</h3>
+</div>
 
-	<?php if (Yii::app()->user->hasFlash('commentSubmitted')) : ?>
-		<div class="flash-success">
-			<?php echo Yii::app()->user->getFlash('commentSubmitted'); ?>
-		</div>
-	<?php else : ?>
-		<?php $this->renderPartial('/comment/_form', array(
-			'model' => $comment,
-		)); ?>
-	<?php endif; ?>
+<div>
 
-</div><!-- comments -->
+	<?php $this->renderPartial('/comment/_form', array(
+		'model'=> $comment,
+	)); ?>
+
+</div>

@@ -9,14 +9,13 @@
  * @property string $author
  * @property integer $post
  * @property integer $comn_date
+ * @property string $url
  *
  * The followings are the available model relations:
  * @property Post $post0
  */
 class Comment extends CActiveRecord
 {
-	const STATUS_PENDING=1;
-	const STATUS_APPROVED=2;
 	
 	/**
 	 * Returns the static model of the specified AR class.
@@ -44,13 +43,9 @@ class Comment extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('post', 'required'),
-			array('post, comn_date', 'numerical', 'integerOnly'=>true),
-			array('comn_content', 'length', 'max'=>280),
-			array('author', 'length', 'max'=>30),
-			// The following rule is used by search().
-			// Please remove those attributes that should not be searched.
-			array('comn_id, comn_content, author, post, comn_date', 'safe', 'on'=>'search'),
+			array('comn_content, author', 'required'),
+			array('author, url', 'length', 'max'=>128),
+			array('url', 'url',)
 		);
 	}
 
@@ -72,14 +67,29 @@ class Comment extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'comn_id' => 'Comn',
-			'comn_content' => 'Comn Content',
-			'author' => 'Author',
+			'comn_id' => 'Id',
+			'comn_content' => 'Comentário',
+			'author' => 'Nome',
 			'post' => 'Post',
-			'comn_date' => 'Comn Date',
+			'comn_date' => 'Create Time',
+			'url'=> 'Website',
 		);
 	}
 
+	public function getUrl($post=null)
+	{
+		if($post===null)
+			$post=$this->post;
+		return $post->url.'#c'.$this->comn_id;
+	}
+
+	public function getAuthorLink()
+	{
+		if(!empty($this->url))
+			return CHtml::link(CHtml::encode($this->author),$this->url);
+		else
+			return CHtml::encode($this->author);
+	}
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
 	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
@@ -96,9 +106,25 @@ class Comment extends CActiveRecord
 		$criteria->compare('author',$this->author,true);
 		$criteria->compare('post',$this->post);
 		$criteria->compare('comn_date',$this->comn_date);
+		$criteria->compare('url',$this->url,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
+	}
+
+	protected function beforeSave(){
+		if(parent::beforeSave()){
+			
+			if($this->isNewRecord){
+				$this->comn_date=time();
+			}
+
+			return true;
+		}
+
+		else{
+			return false;
+		}
 	}
 }

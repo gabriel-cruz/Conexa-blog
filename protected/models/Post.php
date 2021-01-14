@@ -45,7 +45,7 @@ class Post extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, content', 'required'),
+			array('title, content, author, tags', 'required'),
 			array('title', 'length', 'max'=>128),
 			array('tags', 'match', 'pattern'=>'/^[\w\s,]+$/',
 			'message'=>'Tags só podem conter palavras.'),
@@ -67,12 +67,8 @@ class Post extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'author'=> (array(self::BELONGS_TO, 'Users', 'author')),
-			'comments'=> array(self::HAS_MANY, 'Comment', 'post',
-				//'condition'=>'comments.status='.Comment::STATUS_APROVED,
-				'order'=>'comments.comn_date DESC'),
-			'commentCount'=> array(self::STAT, 'Comment', 'post')
-				//'condition'=>'status='.Comment::STATUS_APROVED),	
+			'comments'=> array(self::HAS_MANY, 'Comment', 'post', 'order'=>'comments.comn_date DESC'),
+			'commentCount'=> array(self::STAT, 'Comment', 'post'),	
 		);
 	}
 
@@ -82,12 +78,12 @@ class Post extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'post_id' => 'Post',
-			'title' => 'Title',
-			'content' => 'Content',
-			'tags' => 'Tags',
-			'author'=> 'Author',
-			'date' => 'Date',
+			'post_id' => 'Postagem',
+			'title' => 'Título',
+			'content' => 'Conteúdo',
+			'tags' => 'Categoria',
+			'author'=> 'Nome',
+			'date' => 'Data',
 			'update_time' => 'Update Time',
 		);
 	}
@@ -152,5 +148,11 @@ class Post extends CActiveRecord
 	protected function afterFind(){
 		parent::afterFind();
 		$this->_oldTags=$this->tags;
+	}
+
+	public function addComment($comment){
+		$comment->post=$this->post_id;
+
+		return $comment->save();
 	}
 }
