@@ -1,5 +1,5 @@
 <?php foreach($comments as $comment): ?>
-<div class="comment" id="c<?php echo $comment->comn_id;?>">
+<div class="view" id="c<?php echo $comment->comn_id;?>">
 
     <?php echo CHtml::link("#{$comment->comn_id}", $comment->getUrl($post), array(
         'class'=>'cid',

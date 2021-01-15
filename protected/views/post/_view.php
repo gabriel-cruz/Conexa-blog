@@ -14,8 +14,11 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b>
-	<?php echo CHtml::encode($data->content); ?>
 	<br />
+
+	<p class="text-break">
+	<?php echo CHtml::encode($data->content); ?>
+	</p>
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('tags')); ?>:</b>
 	<?php echo CHtml::encode($data->tags); ?>

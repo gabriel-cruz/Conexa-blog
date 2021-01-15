@@ -2087,3 +2087,971 @@ Stack trace:
 REQUEST_URI=/index.php?r=post/post
 HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
 ---
+2021/01/15 12:53:24 [error] [exception.CException] CException: Property "Post.tagname" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('tagname')
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/_view.php(21): CActiveRecord->__get('tagname')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(131): require('/home/conexa-de...')
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, false)
+#4 /home/conexa-dev-02/Documentos/yii/framework/zii/widgets/CListView.php(260): CBaseController->renderFile('/home/conexa-de...', Array)
+#5 /home/conexa-dev-02/Documentos/yii/framework/zii/widgets/CBaseListView.php(161): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 /home/conexa-dev-02/Documentos/yii/framework/zii/widgets/CBaseListView.php(144): preg_replace_callback('/{(\\w+)}/', Array, '{items}\n{pager}')
+#8 /home/conexa-dev-02/Documentos/yii/framework/zii/widgets/CBaseListView.php(129): CBaseListView->renderContent()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(174): CBaseListView->run()
+#10 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/index.php(8): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#15 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(162): CController->render('index', Array)
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#20 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#24 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#26 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#27 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#28 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php?r=post
+---
+2021/01/15 12:55:18 [error] [exception.CException] CException: Property "Post.tag" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('tag')
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/_view.php(21): CActiveRecord->__get('tag')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(131): require('/home/conexa-de...')
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, false)
+#4 /home/conexa-dev-02/Documentos/yii/framework/zii/widgets/CListView.php(260): CBaseController->renderFile('/home/conexa-de...', Array)
+#5 /home/conexa-dev-02/Documentos/yii/framework/zii/widgets/CBaseListView.php(161): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 /home/conexa-dev-02/Documentos/yii/framework/zii/widgets/CBaseListView.php(144): preg_replace_callback('/{(\\w+)}/', Array, '{items}\n{pager}')
+#8 /home/conexa-dev-02/Documentos/yii/framework/zii/widgets/CBaseListView.php(129): CBaseListView->renderContent()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(174): CBaseListView->run()
+#10 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/index.php(8): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#15 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(162): CController->render('index', Array)
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#20 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#24 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#26 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#27 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#28 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php?r=post
+---
+2021/01/15 12:57:18 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "post". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:484
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(271): CController->missingAction('post')
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('post')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/post')
+#3 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/post
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/15 12:57:46 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "post". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:484
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(271): CController->missingAction('post')
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('post')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/post')
+#3 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/post
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/15 13:03:44 [error] [exception.CException] CException: SiteController cannot find the requested view "post". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:07:59 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:00 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:01 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:01 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:01 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:01 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:01 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:01 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:01 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:02 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:02 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:02 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:02 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:02 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:02 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:02 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:03 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:03 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:03 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:03 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:03 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:03 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:03 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:04 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:04 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:08:04 [error] [exception.CException] CException: SiteController cannot find the requested view "post/_view". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post/_view', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post/_view')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2021/01/15 13:12:28 [error] [exception.CException] CException: SiteController cannot find the requested view "post". in /home/conexa-dev-02/Documentos/yii/framework/web/CController.php:879
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('post', NULL, true)
+#1 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/SiteController.php(32): CController->render('post')
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#8 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=post
+HTTP_REFERER=http://127.0.0.1:8080/index.php?r=post/create
+---
+2021/01/15 13:40:07 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/home/conexa-dev-02/Documentos/yii/framework/web/helpers/CHtml.php:85)
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/helpers/CHtml.php(140): renderAttributes()
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/helpers/CHtml.php(551): tag()
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/helpers/CHtml.php(1176): label()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/helpers/CHtml.php(1198): activeLabel()
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/widgets/CActiveForm.php(563): activeLabelEx()
+#5 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/_form.php(31): CActiveForm->labelEx()
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): PostController->renderInternal()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): PostController->renderFile()
+#9 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/create.php(18): PostController->renderPartial()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): PostController->renderInternal()
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): PostController->renderFile()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): PostController->renderPartial()
+#14 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(98): PostController->render()
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#20 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): PostController->filterAccessControl()
+#21 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#22 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#23 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): PostController->runActionWithFilters()
+#24 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): PostController->run()
+#25 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#26 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/post/create
+in /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/_form.php (31)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/create.php (18)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (98)
+2021/01/15 14:34:43 [error] [php] Array to string conversion (/home/conexa-dev-02/Documentos/yii/framework/zii/widgets/CMenu.php:201)
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/zii/widgets/CMenu.php(159): CMenu->renderMenu()
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(174): CMenu->run()
+#2 /home/conexa-dev-02/Documentos/yii/blog/protected/views/layouts/main.php(32): PostController->widget()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require()
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): PostController->renderInternal()
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/widgets/CContentDecorator.php(77): PostController->renderFile()
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(207): CContentDecorator->run()
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(301): PostController->endWidget()
+#10 /home/conexa-dev-02/Documentos/yii/blog/protected/views/layouts/column2.php(20): PostController->endContent()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require()
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): PostController->renderInternal()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(785): PostController->renderFile()
+#14 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(162): PostController->render()
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#20 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): PostController->filterAccessControl()
+#21 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#22 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#23 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): PostController->runActionWithFilters()
+#24 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): PostController->run()
+#25 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#26 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/post
+in /home/conexa-dev-02/Documentos/yii/blog/protected/views/layouts/main.php (32)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/views/layouts/column2.php (20)
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (162)
+2021/01/15 15:01:16 [error] [exception.CException] CException: Alias "zii.widgets.CGridView" is invalid. Make sure it points to an existing PHP file and the file is readable. in /home/conexa-dev-02/Documentos/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('zii.widgets.CGr...', true)
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PostController), 'zii.widgets.CGr...', Array)
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CGr...', Array)
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/index.php(8): CBaseController->widget('zii.widgets.CGr...', Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(162): CController->render('index', Array)
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#20 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/post
+HTTP_REFERER=http://127.0.0.1:8080/index.php/post/1
+---
+2021/01/15 15:02:21 [error] [exception.CException] CException: Property "CGridView.itemView" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CWidgetFactory.php(162): CComponent->__set('itemView', '_view')
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PostController), 'CGridView', Array)
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/index.php(8): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(162): CController->render('index', Array)
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#20 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/post
+HTTP_REFERER=http://127.0.0.1:8080/index.php/post/1
+---
+2021/01/15 15:07:16 [error] [exception.CException] CException: Property "CGridView.itemView" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CWidgetFactory.php(162): CComponent->__set('itemView', '_view')
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PostController), 'CGridView', Array)
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/index.php(8): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(162): CController->render('index', Array)
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#20 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/post
+HTTP_REFERER=http://127.0.0.1:8080/index.php/post/1
+---
+2021/01/15 15:16:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'content' at row 1. The SQL statement executed was: INSERT INTO `tbl_post` (`title`, `content`, `tags`, `author`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php (93)
+in /home/conexa-dev-02/Documentos/yii/blog/index.php (13)
+2021/01/15 15:16:24 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'content' at row 1. The SQL statement executed was: INSERT INTO `tbl_post` (`title`, `content`, `tags`, `author`) VALUES (:yp0, :yp1, :yp2, :yp3) in /home/conexa-dev-02/Documentos/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(1017): CDbCommand->execute()
+#1 /home/conexa-dev-02/Documentos/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(93): CActiveRecord->save()
+#3 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/create')
+#14 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/post/create
+HTTP_REFERER=http://127.0.0.1:8080/index.php/post/create
+---
+2021/01/15 15:41:58 [error] [exception.CException] CException: Property "CListView.itemCssClass" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CWidgetFactory.php(162): CComponent->__set('itemCssClass', 'border')
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PostController), 'CListView', Array)
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/index.php(10): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(162): CController->render('index', Array)
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#20 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/post
+HTTP_REFERER=http://127.0.0.1:8080/index.php/post/10
+---
+2021/01/15 15:42:31 [error] [exception.CException] CException: Property "CListView.itemCssClass" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CWidgetFactory.php(162): CComponent->__set('itemCssClass', 'border')
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PostController), 'CListView', Array)
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/index.php(10): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(162): CController->render('index', Array)
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#20 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/post
+HTTP_REFERER=http://127.0.0.1:8080/index.php/post/10
+---
+2021/01/15 15:42:32 [error] [exception.CException] CException: Property "CListView.itemCssClass" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CWidgetFactory.php(162): CComponent->__set('itemCssClass', 'border')
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PostController), 'CListView', Array)
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/index.php(10): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(162): CController->render('index', Array)
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#20 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/post
+HTTP_REFERER=http://127.0.0.1:8080/index.php/post/10
+---
+2021/01/15 15:42:32 [error] [exception.CException] CException: Property "CListView.itemCssClass" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CWidgetFactory.php(162): CComponent->__set('itemCssClass', 'border')
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PostController), 'CListView', Array)
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/index.php(10): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(162): CController->render('index', Array)
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#20 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/post
+HTTP_REFERER=http://127.0.0.1:8080/index.php/post/10
+---
+2021/01/15 15:42:32 [error] [exception.CException] CException: Property "CListView.itemCssClass" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CWidgetFactory.php(162): CComponent->__set('itemCssClass', 'border')
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PostController), 'CListView', Array)
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/index.php(10): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(162): CController->render('index', Array)
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#20 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/post
+HTTP_REFERER=http://127.0.0.1:8080/index.php/post/10
+---
+2021/01/15 15:42:32 [error] [exception.CException] CException: Property "CListView.itemCssClass" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CWidgetFactory.php(162): CComponent->__set('itemCssClass', 'border')
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PostController), 'CListView', Array)
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/index.php(10): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(162): CController->render('index', Array)
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#20 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/post
+HTTP_REFERER=http://127.0.0.1:8080/index.php/post/10
+---
+2021/01/15 15:42:33 [error] [exception.CException] CException: Property "CListView.itemCssClass" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CWidgetFactory.php(162): CComponent->__set('itemCssClass', 'border')
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PostController), 'CListView', Array)
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/index.php(10): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(162): CController->render('index', Array)
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#20 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/post
+HTTP_REFERER=http://127.0.0.1:8080/index.php/post/10
+---
+2021/01/15 15:42:33 [error] [exception.CException] CException: Property "CListView.itemCssClass" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CWidgetFactory.php(162): CComponent->__set('itemCssClass', 'border')
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PostController), 'CListView', Array)
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/index.php(10): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(162): CController->render('index', Array)
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#20 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/post
+HTTP_REFERER=http://127.0.0.1:8080/index.php/post/10
+---
+2021/01/15 15:42:33 [error] [exception.CException] CException: Property "CListView.itemCssClass" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CWidgetFactory.php(162): CComponent->__set('itemCssClass', 'border')
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PostController), 'CListView', Array)
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/index.php(10): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(162): CController->render('index', Array)
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#20 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/post
+HTTP_REFERER=http://127.0.0.1:8080/index.php/post/10
+---
+2021/01/15 15:42:33 [error] [exception.CException] CException: Property "CListView.itemCssClass" is not defined. in /home/conexa-dev-02/Documentos/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/conexa-dev-02/Documentos/yii/framework/web/CWidgetFactory.php(162): CComponent->__set('itemCssClass', 'border')
+#1 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PostController), 'CListView', Array)
+#2 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 /home/conexa-dev-02/Documentos/yii/blog/protected/views/post/index.php(10): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#5 /home/conexa-dev-02/Documentos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#6 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#7 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /home/conexa-dev-02/Documentos/yii/blog/protected/controllers/PostController.php(162): CController->render('index', Array)
+#9 /home/conexa-dev-02/Documentos/yii/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#10 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/conexa-dev-02/Documentos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-02/Documentos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#19 /home/conexa-dev-02/Documentos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#20 /home/conexa-dev-02/Documentos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-02/Documentos/yii/blog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/post
+HTTP_REFERER=http://127.0.0.1:8080/index.php/post/10
+---

@@ -143,7 +143,7 @@ class PostController extends Controller
 	{
 		$criteria = new CDbCriteria(array(
 			//'condition'=>'status'.Post::STATUS_PUBLISHED,
-			'order' => 'update_time DESC',
+			'order' => 'date DESC',
 			'with' => 'commentCount',
 		));
 

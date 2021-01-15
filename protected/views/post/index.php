@@ -6,4 +6,6 @@
 	'dataProvider' => $dataProvider,
 	'itemView' => '_view',
 	'template' => "{items}\n{pager}",
+	'htmlOptions'=>array('class'=>'border'),
+
 )); ?>

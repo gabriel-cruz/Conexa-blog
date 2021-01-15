@@ -11,9 +11,9 @@ $this->pageTitle = $model->title;
 
 <div id="comments">
 	<?php if ($model->commentCount >= 1) : ?>
-		<h3>
+		<h5>
 			<?php echo $model->commentCount . ' comentário(s)'; ?>	
-		</h3>
+		</h5>
 
 		<?php $this->renderPartial('_comments', array(
 			'post' => $model,
